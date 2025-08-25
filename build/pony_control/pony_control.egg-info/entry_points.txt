@@ -1,0 +1,4 @@
+[console_scripts]
+quadruped_control = pony_control.scripts.run_quadruped:main
+test_single_leg = pony_control.scripts.test_single_leg:main
+test_single_motor = pony_control.scripts.test_single_motor:main
