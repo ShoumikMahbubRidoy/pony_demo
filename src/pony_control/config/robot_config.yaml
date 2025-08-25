@@ -1,0 +1,217 @@
+# Robot configuration for Pony Quadruped Robot
+# Physical dimensions, kinematic parameters, and system settings
+
+robot_parameters:
+  # Robot identification
+  name: "Pony"
+  version: "1.0"
+  description: "Quadruped robot with AK60-6 V3.0 motors"
+  
+  # Physical dimensions (in meters)
+  # These values should be measured from your actual robot
+  dimensions:
+    # Distance from body center to hip joints
+    hip_length: 0.08        # Distance from body to hip joint axis
+    
+    # Leg segment lengths  
+    thigh_length: 0.20      # Upper leg length (hip to knee)
+    shin_length: 0.20       # Lower leg length (knee to ankle)
+    
+    # Body dimensions
+    body_width: 0.16        # Distance between left/right hips
+    body_length: 0.30       # Distance between front/rear hips
+    body_height: 0.12       # Body thickness (for collision avoidance)
+    
+    # Foot specifications
+    foot_radius: 0.02       # Foot contact point radius
+    
+  # Kinematic parameters
+  kinematics:
+    # Workspace limits (relative to hip joint)
+    workspace:
+      x_min: 0.05          # Minimum forward reach
+      x_max: 0.35          # Maximum forward reach  
+      z_min: -0.40         # Maximum down reach (negative is down)
+      z_max: -0.05         # Minimum down reach (robot height limit)
+    
+    # Default standing pose
+    standing_pose:
+      stance_width: 0.16    # Distance between left/right feet
+      stance_length: 0.25   # Distance between front/rear feet  
+      body_height: 0.30     # Height of body above ground
+      
+    # Default foot positions (relative to hip joints)
+    default_foot_positions:
+      leg1: [0.25, 0.08, -0.30]   # Front Right [x, y, z]
+      leg2: [0.25, -0.08, -0.30]  # Front Left
+      leg3: [-0.15, 0.08, -0.30]  # Rear Right
+      leg4: [-0.15, -0.08, -0.30] # Rear Left
+
+  # CAN communication settings
+  can_settings:
+    interface: "can0"
+    bitrate: 1000000        # 1 Mbps
+    timeout: 1.0            # Communication timeout in seconds
+    feedback_rate: 50       # Expected feedback rate in Hz
+    
+    # CAN message settings
+    retry_attempts: 3       # Number of retries for failed messages
+    retry_delay: 0.01       # Delay between retries in seconds
+    
+  # Motor configuration
+  motors:
+    # Motor type specifications
+    type: "AK60-6_V3"
+    firmware_version: "AK60_6_V3_241122_V3"
+    
+    # Motor assignments (CAN IDs)
+    assignments:
+      leg1: [0x40, 0x41, 0x42]  # Front Right: [hip, knee, ankle]
+      leg2: [0x50, 0x51, 0x52]  # Front Left: [hip, knee, ankle]  
+      leg3: [0x60, 0x61, 0x62]  # Rear Right: [hip, knee, ankle]
+      leg4: [0x70, 0x71, 0x72]  # Rear Left: [hip, knee, ankle]
+
+    # Motor enable/disable sequence
+    enable_sequence:
+      delay_between_motors: 0.1    # Seconds between motor enables
+      delay_between_legs: 0.2      # Seconds between leg enables
+      
+  # Movement parameters
+  movement:
+    # Default movement speeds
+    speeds:
+      slow: 0.5
+      normal: 1.0
+      fast: 1.5
+      
+    # Interpolation settings
+    interpolation:
+      default_duration: 1.0      # Default movement time in seconds
+      min_duration: 0.1          # Minimum movement time
+      max_duration: 5.0          # Maximum movement time
+      type: "cubic"              # linear, cubic, or quintic
+      
+    # Step parameters for walking
+    walking:
+      stride_length: 0.12        # Forward step distance in meters
+      stride_height: 0.06        # Foot lift height during swing
+      stance_time: 0.6           # Time foot is on ground (seconds)
+      swing_time: 0.4            # Time foot is in air (seconds)
+      
+  # Gait parameters
+  gaits:
+    # Trot gait (diagonal legs move together)
+    trot:
+      cycle_time: 1.0            # Complete gait cycle time
+      duty_factor: 0.6           # Fraction of cycle in stance
+      phase_offset:              # Phase offset for each leg
+        leg1: 0.0                # Front Right (reference leg)
+        leg2: 0.5                # Front Left  
+        leg3: 0.5                # Rear Right
+        leg4: 0.0                # Rear Left
+        
+    # Pace gait (lateral legs move together)  
+    pace:
+      cycle_time: 1.2
+      duty_factor: 0.6
+      phase_offset:
+        leg1: 0.0                # Front Right
+        leg2: 0.0                # Front Left
+        leg3: 0.5                # Rear Right  
+        leg4: 0.5                # Rear Left
+        
+    # Walk gait (one leg at a time)
+    walk:
+      cycle_time: 2.0
+      duty_factor: 0.75
+      phase_offset:
+        leg1: 0.0                # Front Right
+        leg2: 0.5                # Front Left
+        leg3: 0.25               # Rear Right
+        leg4: 0.75               # Rear Left
+
+  # Safety parameters
+  safety:
+    # Emergency stop settings
+    emergency_stop:
+      enabled: true
+      max_deceleration: 5.0      # Maximum deceleration in m/s²
+      torque_limit_factor: 0.1   # Reduce torque to 10% during emergency
+      auto_disable_timeout: 5.0  # Auto-disable motors after 5 seconds
+      
+    # Collision detection (basic)
+    collision_detection:
+      enabled: false             # Enable/disable collision detection
+      torque_threshold: 5.0      # Nm - threshold for detecting collisions
+      
+    # Stability monitoring
+    stability:
+      max_lean_angle: 30.0       # Maximum body lean angle in degrees
+      min_support_legs: 2        # Minimum number of legs in stance
+      
+  # Test positions and sequences
+  test_positions:
+    # Basic poses for testing
+    home: [0.0, 0.0, 0.0]           # All joints at zero
+    crouch: [0.0, -1.0, 0.5]       # Low crouch position
+    stand: [0.0, -0.5, 0.3]        # Normal standing position
+    
+    # Calibration positions
+    calibration:
+      leg_extended: [0.3, -0.8, 0.5]  # Leg fully extended for measurement
+      leg_retracted: [0.1, -0.2, 0.1] # Leg pulled in
+      
+    # Test sequence for validation
+    test_sequence:
+      - name: "home"
+        duration: 2.0
+      - name: "stand" 
+        duration: 3.0
+      - name: "crouch"
+        duration: 2.0
+      - name: "home"
+        duration: 2.0
+
+  # Logging and debugging
+  logging:
+    # Log levels: DEBUG, INFO, WARNING, ERROR
+    level: "INFO"
+    
+    # What to log
+    log_can_messages: false      # Log all CAN traffic (very verbose)
+    log_motor_states: true       # Log motor position/velocity/torque
+    log_foot_positions: true     # Log calculated foot positions
+    log_gait_phases: true        # Log gait timing and phases
+    
+    # Log file settings
+    log_to_file: true
+    log_file_path: "/tmp/pony_robot.log"
+    max_log_size_mb: 100         # Maximum log file size
+    
+  # Performance tuning
+  performance:
+    # Update rates
+    control_rate: 50             # Hz - main control loop rate
+    feedback_rate: 50            # Hz - CAN feedback processing rate
+    keyboard_rate: 20            # Hz - keyboard input processing
+    
+    # Threading
+    use_separate_can_thread: true    # Separate thread for CAN communication
+    thread_priorities:               # Thread priority settings (0-99)
+      can_thread: 80
+      control_thread: 70
+      keyboard_thread: 10
+      
+  # Development and debugging features
+  development:
+    # Enable development features
+    enable_simulation_mode: false   # Run without real hardware
+    enable_motor_simulation: false  # Simulate motor responses
+    
+    # Testing features
+    auto_test_on_startup: false     # Run self-test on startup
+    test_single_motor_on_fail: true # Test individual motors if leg fails
+    
+    # Debugging
+    plot_trajectories: false        # Plot foot trajectories (requires matplotlib)
+    save_trajectory_data: false     # Save trajectory data to file

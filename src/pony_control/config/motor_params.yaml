@@ -1,0 +1,72 @@
+# Motor parameters configuration for Pony Quadruped Robot
+# AK60-6 V3.0 motor specifications and tuning parameters
+
+motor_parameters:
+  # Default PID gains for position control
+  # These can be tuned based on your robot's behavior
+  default_gains:
+    kp: 100.0      # Position gain - higher = faster response, may cause oscillation
+    kd: 1.0        # Velocity gain - higher = better damping, smoother motion
+    ki: 0.0        # Integral gain - usually 0 for AK motors
+
+  # Joint-specific PID gains (fine-tuning for each joint type)
+  joint_gains:
+    hip:
+      kp: 120.0    # Hip joints need strong position holding
+      kd: 1.2      # Good damping for stability
+      ki: 0.0
+    knee:
+      kp: 100.0    # Standard gains for knee
+      kd: 1.0      # Moderate damping
+      ki: 0.0
+    ankle:
+      kp: 80.0     # Ankle joints can be softer
+      kd: 0.8      # Lighter damping for compliance
+      ki: 0.0
+
+  # Safety limits per joint type (in radians and physical units)
+  safety_limits:
+    hip:
+      position_min: -1.57    # -90 degrees
+      position_max: 1.57     # +90 degrees
+      velocity_max: 10.0     # rad/s
+      torque_max: 8.0        # Nm
+    knee:
+      position_min: -2.36    # -135 degrees (knee bending down)
+      position_max: 0.0      # 0 degrees (straight leg)
+      velocity_max: 10.0     # rad/s
+      torque_max: 8.0        # Nm
+    ankle:
+      position_min: -1.57    # -90 degrees
+      position_max: 1.57     # +90 degrees
+      velocity_max: 10.0     # rad/s
+      torque_max: 6.0        # Nm (lighter joint)
+
+  # Motor communication settings
+  communication:
+    command_rate: 50         # Hz - rate of sending commands
+    feedback_timeout: 1.0    # seconds - max time without feedback before alarm
+    enable_delay: 0.1        # seconds - delay between motor enables
+    disable_delay: 0.1       # seconds - delay between motor disables
+
+  # Movement interpolation settings
+  interpolation:
+    default_duration: 1.0    # seconds - default movement time
+    min_duration: 0.1        # seconds - minimum movement time
+    max_duration: 5.0        # seconds - maximum movement time
+    interpolation_type: "cubic"  # linear, cubic, or quintic
+
+# Robot-specific motor assignments
+# Motor IDs for each leg: [hip, knee, ankle]
+motor_assignments:
+  leg1: [0x40, 0x41, 0x42]  # Front Right
+  leg2: [0x50, 0x51, 0x52]  # Front Left
+  leg3: [0x60, 0x61, 0x62]  # Rear Right  
+  leg4: [0x70, 0x71, 0x72]  # Rear Left
+
+# Emergency stop settings
+emergency_stop:
+  enabled: true
+  torque_limit_multiplier: 0.1  # Reduce torque to 10% in emergency
+  position_hold: false          # Don't hold position in emergency
+  automatic_disable_timeout: 5.0  # Auto-disable after 5 seconds

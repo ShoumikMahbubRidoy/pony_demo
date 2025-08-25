@@ -1,0 +1,69 @@
+[7.148s] Invoking command in '/home/sivax/pony_quadruped/src/pony_control': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=(py) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ PYTHONPATH=/home/sivax/pony_quadruped/build/pony_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sivax/pony_quadruped/install/pony_control/lib/python3.12/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(py) /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/pony_control build --build-base /home/sivax/pony_quadruped/build/pony_control/build install --record /home/sivax/pony_quadruped/build/pony_control/install.log --single-version-externally-managed install_data
+[8.707s] running egg_info
+[8.708s] creating ../../build/pony_control/pony_control.egg-info
+[8.840s] writing ../../build/pony_control/pony_control.egg-info/PKG-INFO
+[8.842s] writing dependency_links to ../../build/pony_control/pony_control.egg-info/dependency_links.txt
+[8.843s] writing entry points to ../../build/pony_control/pony_control.egg-info/entry_points.txt
+[8.844s] writing requirements to ../../build/pony_control/pony_control.egg-info/requires.txt
+[8.844s] writing top-level names to ../../build/pony_control/pony_control.egg-info/top_level.txt
+[8.845s] writing manifest file '../../build/pony_control/pony_control.egg-info/SOURCES.txt'
+[9.086s] reading manifest file '../../build/pony_control/pony_control.egg-info/SOURCES.txt'
+[9.089s] writing manifest file '../../build/pony_control/pony_control.egg-info/SOURCES.txt'
+[9.091s] running build
+[9.091s] running build_py
+[9.092s] creating /home/sivax/pony_quadruped/build/pony_control/build
+[9.093s] creating /home/sivax/pony_quadruped/build/pony_control/build/lib
+[9.094s] creating /home/sivax/pony_quadruped/build/pony_control/build/lib/pony_control
+[9.095s] copying pony_control/leg_controller.py -> /home/sivax/pony_quadruped/build/pony_control/build/lib/pony_control
+[9.098s] copying pony_control/motor_controller.py -> /home/sivax/pony_quadruped/build/pony_control/build/lib/pony_control
+[9.100s] copying pony_control/__init__.py -> /home/sivax/pony_quadruped/build/pony_control/build/lib/pony_control
+[9.101s] copying pony_control/keyboard_teleop.py -> /home/sivax/pony_quadruped/build/pony_control/build/lib/pony_control
+[9.103s] copying pony_control/quadruped_controller.py -> /home/sivax/pony_quadruped/build/pony_control/build/lib/pony_control
+[9.106s] creating /home/sivax/pony_quadruped/build/pony_control/build/lib/pony_control/utils
+[9.107s] copying pony_control/utils/math_utils.py -> /home/sivax/pony_quadruped/build/pony_control/build/lib/pony_control/utils
+[9.109s] copying pony_control/utils/can_utils.py -> /home/sivax/pony_quadruped/build/pony_control/build/lib/pony_control/utils
+[9.111s] copying pony_control/utils/constants.py -> /home/sivax/pony_quadruped/build/pony_control/build/lib/pony_control/utils
+[9.118s] copying pony_control/utils/__init__.py -> /home/sivax/pony_quadruped/build/pony_control/build/lib/pony_control/utils
+[9.123s] running install
+[9.155s] running install_lib
+[9.281s] creating /home/sivax/pony_quadruped/install/pony_control/lib/python3.12/site-packages/pony_control
+[9.282s] copying /home/sivax/pony_quadruped/build/pony_control/build/lib/pony_control/leg_controller.py -> /home/sivax/pony_quadruped/install/pony_control/lib/python3.12/site-packages/pony_control
+[9.283s] copying /home/sivax/pony_quadruped/build/pony_control/build/lib/pony_control/motor_controller.py -> /home/sivax/pony_quadruped/install/pony_control/lib/python3.12/site-packages/pony_control
+[9.284s] creating /home/sivax/pony_quadruped/install/pony_control/lib/python3.12/site-packages/pony_control/utils
+[9.284s] copying /home/sivax/pony_quadruped/build/pony_control/build/lib/pony_control/utils/math_utils.py -> /home/sivax/pony_quadruped/install/pony_control/lib/python3.12/site-packages/pony_control/utils
+[9.285s] copying /home/sivax/pony_quadruped/build/pony_control/build/lib/pony_control/utils/can_utils.py -> /home/sivax/pony_quadruped/install/pony_control/lib/python3.12/site-packages/pony_control/utils
+[9.286s] copying /home/sivax/pony_quadruped/build/pony_control/build/lib/pony_control/utils/constants.py -> /home/sivax/pony_quadruped/install/pony_control/lib/python3.12/site-packages/pony_control/utils
+[9.287s] copying /home/sivax/pony_quadruped/build/pony_control/build/lib/pony_control/utils/__init__.py -> /home/sivax/pony_quadruped/install/pony_control/lib/python3.12/site-packages/pony_control/utils
+[9.289s] copying /home/sivax/pony_quadruped/build/pony_control/build/lib/pony_control/__init__.py -> /home/sivax/pony_quadruped/install/pony_control/lib/python3.12/site-packages/pony_control
+[9.290s] copying /home/sivax/pony_quadruped/build/pony_control/build/lib/pony_control/keyboard_teleop.py -> /home/sivax/pony_quadruped/install/pony_control/lib/python3.12/site-packages/pony_control
+[9.291s] copying /home/sivax/pony_quadruped/build/pony_control/build/lib/pony_control/quadruped_controller.py -> /home/sivax/pony_quadruped/install/pony_control/lib/python3.12/site-packages/pony_control
+[9.295s] byte-compiling /home/sivax/pony_quadruped/install/pony_control/lib/python3.12/site-packages/pony_control/leg_controller.py to leg_controller.cpython-312.pyc
+[9.309s] byte-compiling /home/sivax/pony_quadruped/install/pony_control/lib/python3.12/site-packages/pony_control/motor_controller.py to motor_controller.cpython-312.pyc
+[9.326s] byte-compiling /home/sivax/pony_quadruped/install/pony_control/lib/python3.12/site-packages/pony_control/utils/math_utils.py to math_utils.cpython-312.pyc
+[9.338s] byte-compiling /home/sivax/pony_quadruped/install/pony_control/lib/python3.12/site-packages/pony_control/utils/can_utils.py to can_utils.cpython-312.pyc
+[9.344s] byte-compiling /home/sivax/pony_quadruped/install/pony_control/lib/python3.12/site-packages/pony_control/utils/constants.py to constants.cpython-312.pyc
+[9.347s] byte-compiling /home/sivax/pony_quadruped/install/pony_control/lib/python3.12/site-packages/pony_control/utils/__init__.py to __init__.cpython-312.pyc
+[9.348s] byte-compiling /home/sivax/pony_quadruped/install/pony_control/lib/python3.12/site-packages/pony_control/__init__.py to __init__.cpython-312.pyc
+[9.350s] byte-compiling /home/sivax/pony_quadruped/install/pony_control/lib/python3.12/site-packages/pony_control/keyboard_teleop.py to keyboard_teleop.cpython-312.pyc
+[9.359s] byte-compiling /home/sivax/pony_quadruped/install/pony_control/lib/python3.12/site-packages/pony_control/quadruped_controller.py to quadruped_controller.cpython-312.pyc
+[9.368s] running install_data
+[9.368s] creating /home/sivax/pony_quadruped/install/pony_control/share/ament_index
+[9.369s] creating /home/sivax/pony_quadruped/install/pony_control/share/ament_index/resource_index
+[9.369s] creating /home/sivax/pony_quadruped/install/pony_control/share/ament_index/resource_index/packages
+[9.370s] copying resource/pony_control -> /home/sivax/pony_quadruped/install/pony_control/share/ament_index/resource_index/packages
+[9.370s] copying package.xml -> /home/sivax/pony_quadruped/install/pony_control/share/pony_control
+[9.371s] creating /home/sivax/pony_quadruped/install/pony_control/share/pony_control/launch
+[9.372s] copying launch/quadruped_control.launch.py -> /home/sivax/pony_quadruped/install/pony_control/share/pony_control/launch
+[9.412s] copying launch/single_leg_test.launch.py -> /home/sivax/pony_quadruped/install/pony_control/share/pony_control/launch
+[9.441s] copying launch/single_motor_test.launch.py -> /home/sivax/pony_quadruped/install/pony_control/share/pony_control/launch
+[9.536s] creating /home/sivax/pony_quadruped/install/pony_control/share/pony_control/config
+[9.538s] copying config/motor_params.yaml -> /home/sivax/pony_quadruped/install/pony_control/share/pony_control/config
+[9.560s] copying config/robot_config.yaml -> /home/sivax/pony_quadruped/install/pony_control/share/pony_control/config
+[9.638s] running install_egg_info
+[9.871s] Copying ../../build/pony_control/pony_control.egg-info to /home/sivax/pony_quadruped/install/pony_control/lib/python3.12/site-packages/pony_control-1.0.0-py3.12.egg-info
+[9.885s] running install_scripts
+[10.726s] Installing quadruped_control script to /home/sivax/pony_quadruped/install/pony_control/bin
+[10.733s] Installing test_single_leg script to /home/sivax/pony_quadruped/install/pony_control/bin
+[10.735s] Installing test_single_motor script to /home/sivax/pony_quadruped/install/pony_control/bin
+[10.741s] writing list of installed files to '/home/sivax/pony_quadruped/build/pony_control/install.log'
+[10.964s] Invoked command in '/home/sivax/pony_quadruped/src/pony_control' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=(py) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ PYTHONPATH=/home/sivax/pony_quadruped/build/pony_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sivax/pony_quadruped/install/pony_control/lib/python3.12/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(py) /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/pony_control build --build-base /home/sivax/pony_quadruped/build/pony_control/build install --record /home/sivax/pony_quadruped/build/pony_control/install.log --single-version-externally-managed install_data

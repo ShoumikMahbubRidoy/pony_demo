@@ -1,0 +1,125 @@
+[0.000000] (-) TimerEvent: {}
+[0.004040] (pony_control) JobQueued: {'identifier': 'pony_control', 'dependencies': OrderedDict()}
+[0.004434] (pony_control) JobStarted: {'identifier': 'pony_control'}
+[0.099678] (-) TimerEvent: {}
+[0.205885] (-) TimerEvent: {}
+[0.307610] (-) TimerEvent: {}
+[0.409050] (-) TimerEvent: {}
+[0.510953] (-) TimerEvent: {}
+[0.611672] (-) TimerEvent: {}
+[0.712395] (-) TimerEvent: {}
+[0.813073] (-) TimerEvent: {}
+[0.913897] (-) TimerEvent: {}
+[1.014622] (-) TimerEvent: {}
+[1.115308] (-) TimerEvent: {}
+[1.215996] (-) TimerEvent: {}
+[1.316720] (-) TimerEvent: {}
+[1.417407] (-) TimerEvent: {}
+[1.518314] (-) TimerEvent: {}
+[1.620753] (-) TimerEvent: {}
+[1.723209] (-) TimerEvent: {}
+[1.824066] (-) TimerEvent: {}
+[1.924796] (-) TimerEvent: {}
+[2.025697] (-) TimerEvent: {}
+[2.126449] (-) TimerEvent: {}
+[2.227089] (-) TimerEvent: {}
+[2.327860] (-) TimerEvent: {}
+[2.428475] (-) TimerEvent: {}
+[2.529167] (-) TimerEvent: {}
+[2.630155] (-) TimerEvent: {}
+[2.730823] (-) TimerEvent: {}
+[2.831470] (-) TimerEvent: {}
+[2.932108] (-) TimerEvent: {}
+[3.032816] (-) TimerEvent: {}
+[3.133512] (-) TimerEvent: {}
+[3.234322] (-) TimerEvent: {}
+[3.336519] (-) TimerEvent: {}
+[3.437260] (-) TimerEvent: {}
+[3.542096] (-) TimerEvent: {}
+[3.643898] (-) TimerEvent: {}
+[3.745055] (-) TimerEvent: {}
+[3.845813] (-) TimerEvent: {}
+[3.946546] (-) TimerEvent: {}
+[4.047552] (-) TimerEvent: {}
+[4.148400] (-) TimerEvent: {}
+[4.249067] (-) TimerEvent: {}
+[4.349799] (-) TimerEvent: {}
+[4.450449] (-) TimerEvent: {}
+[4.551085] (-) TimerEvent: {}
+[4.651788] (-) TimerEvent: {}
+[4.752455] (-) TimerEvent: {}
+[4.853104] (-) TimerEvent: {}
+[4.953802] (-) TimerEvent: {}
+[5.057480] (-) TimerEvent: {}
+[5.158160] (-) TimerEvent: {}
+[5.258881] (-) TimerEvent: {}
+[5.359598] (-) TimerEvent: {}
+[5.460468] (-) TimerEvent: {}
+[5.561537] (-) TimerEvent: {}
+[5.662572] (-) TimerEvent: {}
+[5.726266] (pony_control) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/pony_control', 'build', '--build-base', '/home/sivax/pony_quadruped/build/pony_control/build', 'install', '--record', '/home/sivax/pony_quadruped/build/pony_control/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/sivax/pony_quadruped/src/pony_control', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'sivax', 'XDG_SESSION_TYPE': 'wayland', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/sivax', 'OLDPWD': '/home/sivax/pony_quadruped/src/pony_control/scripts', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'PS1': '(py) \\[\\e]0;\\u@\\h: \\w\\a\\]${debian_chroot:+($debian_chroot)}\\[\\033[01;32m\\]\\u@\\h\\[\\033[00m\\]:\\[\\033[01;34m\\]\\w\\[\\033[00m\\]\\$', 'SYSTEMD_EXEC_PID': '1708', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1002/bus', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/sivax/pony_quadruped/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'sivax', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1002.slice/user@1002.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'sivax', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/home/sivax/venvs/py/bin:/home/sivax/pony_quadruped/install/pony_control/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/sivax-desktop:@/tmp/.ICE-unix/1672,unix/sivax-desktop:/tmp/.ICE-unix/1672', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/2c8f11ab_e270_44ad_a33b_fb9e4b578314', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1002', 'DISPLAY': ':0', 'LANG': 'C.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'VIRTUAL_ENV_PROMPT': '(py)', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1002/.mutter-Xwaylandauth.1PIGB3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.152', 'SSH_AUTH_SOCK': '/run/user/1002/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/sivax/pony_quadruped/install/pony_control:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'VIRTUAL_ENV': '/home/sivax/venvs/py', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/sivax/pony_quadruped/build/pony_control', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/home/sivax/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/sivax/pony_quadruped/build/pony_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sivax/pony_quadruped/install/pony_control/lib/python3.12/site-packages:/home/sivax/pony_quadruped/install/pony_control/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor'}, 'shell': False}
+[5.762725] (-) TimerEvent: {}
+[5.863437] (-) TimerEvent: {}
+[5.964201] (-) TimerEvent: {}
+[6.065113] (-) TimerEvent: {}
+[6.165946] (-) TimerEvent: {}
+[6.266708] (-) TimerEvent: {}
+[6.367416] (-) TimerEvent: {}
+[6.468051] (-) TimerEvent: {}
+[6.568792] (-) TimerEvent: {}
+[6.669440] (-) TimerEvent: {}
+[6.770053] (-) TimerEvent: {}
+[6.870761] (-) TimerEvent: {}
+[6.971451] (-) TimerEvent: {}
+[7.072132] (-) TimerEvent: {}
+[7.173001] (-) TimerEvent: {}
+[7.273670] (-) TimerEvent: {}
+[7.354427] (pony_control) StdoutLine: {'line': b'running egg_info\n'}
+[7.373832] (-) TimerEvent: {}
+[7.465149] (pony_control) StdoutLine: {'line': b'writing ../../build/pony_control/pony_control.egg-info/PKG-INFO\n'}
+[7.466531] (pony_control) StdoutLine: {'line': b'writing dependency_links to ../../build/pony_control/pony_control.egg-info/dependency_links.txt\n'}
+[7.467784] (pony_control) StdoutLine: {'line': b'writing entry points to ../../build/pony_control/pony_control.egg-info/entry_points.txt\n'}
+[7.468698] (pony_control) StdoutLine: {'line': b'writing requirements to ../../build/pony_control/pony_control.egg-info/requires.txt\n'}
+[7.469709] (pony_control) StdoutLine: {'line': b'writing top-level names to ../../build/pony_control/pony_control.egg-info/top_level.txt\n'}
+[7.473984] (-) TimerEvent: {}
+[7.574712] (-) TimerEvent: {}
+[7.675380] (-) TimerEvent: {}
+[7.732226] (pony_control) StdoutLine: {'line': b"reading manifest file '../../build/pony_control/pony_control.egg-info/SOURCES.txt'\n"}
+[7.736558] (pony_control) StdoutLine: {'line': b"writing manifest file '../../build/pony_control/pony_control.egg-info/SOURCES.txt'\n"}
+[7.737303] (pony_control) StdoutLine: {'line': b'running build\n'}
+[7.737835] (pony_control) StdoutLine: {'line': b'running build_py\n'}
+[7.738922] (pony_control) StdoutLine: {'line': b'copying pony_control/motor_controller.py -> /home/sivax/pony_quadruped/build/pony_control/build/lib/pony_control\n'}
+[7.742928] (pony_control) StdoutLine: {'line': b'running install\n'}
+[7.766686] (pony_control) StdoutLine: {'line': b'running install_lib\n'}
+[7.775500] (-) TimerEvent: {}
+[7.876113] (-) TimerEvent: {}
+[7.883940] (pony_control) StdoutLine: {'line': b'copying /home/sivax/pony_quadruped/build/pony_control/build/lib/pony_control/motor_controller.py -> /home/sivax/pony_quadruped/install/pony_control/lib/python3.12/site-packages/pony_control\n'}
+[7.889550] (pony_control) StdoutLine: {'line': b'byte-compiling /home/sivax/pony_quadruped/install/pony_control/lib/python3.12/site-packages/pony_control/motor_controller.py to motor_controller.cpython-312.pyc\n'}
+[7.905637] (pony_control) StdoutLine: {'line': b'running install_data\n'}
+[7.910609] (pony_control) StdoutLine: {'line': b'copying resource/pony_control -> /home/sivax/pony_quadruped/install/pony_control/share/ament_index/resource_index/packages\n'}
+[7.911819] (pony_control) StdoutLine: {'line': b'running install_egg_info\n'}
+[7.976301] (-) TimerEvent: {}
+[8.040532] (pony_control) StdoutLine: {'line': b"removing '/home/sivax/pony_quadruped/install/pony_control/lib/python3.12/site-packages/pony_control-1.0.0-py3.12.egg-info' (and everything under it)\n"}
+[8.042473] (pony_control) StdoutLine: {'line': b'Copying ../../build/pony_control/pony_control.egg-info to /home/sivax/pony_quadruped/install/pony_control/lib/python3.12/site-packages/pony_control-1.0.0-py3.12.egg-info\n'}
+[8.050783] (pony_control) StdoutLine: {'line': b'running install_scripts\n'}
+[8.076447] (-) TimerEvent: {}
+[8.177107] (-) TimerEvent: {}
+[8.277801] (-) TimerEvent: {}
+[8.378475] (-) TimerEvent: {}
+[8.479131] (-) TimerEvent: {}
+[8.579805] (-) TimerEvent: {}
+[8.684659] (-) TimerEvent: {}
+[8.785642] (-) TimerEvent: {}
+[8.888900] (-) TimerEvent: {}
+[8.990400] (-) TimerEvent: {}
+[9.091266] (-) TimerEvent: {}
+[9.096748] (pony_control) StdoutLine: {'line': b'Installing quadruped_control script to /home/sivax/pony_quadruped/install/pony_control/bin\n'}
+[9.110906] (pony_control) StdoutLine: {'line': b'Installing test_single_leg script to /home/sivax/pony_quadruped/install/pony_control/bin\n'}
+[9.114933] (pony_control) StdoutLine: {'line': b'Installing test_single_motor script to /home/sivax/pony_quadruped/install/pony_control/bin\n'}
+[9.116929] (pony_control) StdoutLine: {'line': b"writing list of installed files to '/home/sivax/pony_quadruped/build/pony_control/install.log'\n"}
+[9.191702] (-) TimerEvent: {}
+[9.293062] (-) TimerEvent: {}
+[9.355934] (pony_control) CommandEnded: {'returncode': 0}
+[9.393535] (-) TimerEvent: {}
+[9.444520] (pony_control) JobEnded: {'identifier': 'pony_control', 'rc': 0}
+[9.450782] (-) EventReactorShutdown: {}

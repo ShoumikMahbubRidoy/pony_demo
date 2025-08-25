@@ -1,0 +1,24 @@
+[5.724s] Invoking command in '/home/sivax/pony_quadruped/src/pony_control': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=(py) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ PYTHONPATH=/home/sivax/pony_quadruped/build/pony_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sivax/pony_quadruped/install/pony_control/lib/python3.12/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(py) /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/pony_control build --build-base /home/sivax/pony_quadruped/build/pony_control/build install --record /home/sivax/pony_quadruped/build/pony_control/install.log --single-version-externally-managed install_data
+[7.753s] running egg_info
+[7.868s] writing ../../build/pony_control/pony_control.egg-info/PKG-INFO
+[7.870s] writing dependency_links to ../../build/pony_control/pony_control.egg-info/dependency_links.txt
+[7.871s] writing entry points to ../../build/pony_control/pony_control.egg-info/entry_points.txt
+[7.872s] writing requirements to ../../build/pony_control/pony_control.egg-info/requires.txt
+[7.873s] writing top-level names to ../../build/pony_control/pony_control.egg-info/top_level.txt
+[8.129s] reading manifest file '../../build/pony_control/pony_control.egg-info/SOURCES.txt'
+[8.138s] writing manifest file '../../build/pony_control/pony_control.egg-info/SOURCES.txt'
+[8.142s] running build
+[8.143s] running build_py
+[8.145s] running install
+[8.170s] running install_lib
+[8.296s] running install_data
+[8.297s] copying resource/pony_control -> /home/sivax/pony_quadruped/install/pony_control/share/ament_index/resource_index/packages
+[8.299s] running install_egg_info
+[8.453s] removing '/home/sivax/pony_quadruped/install/pony_control/lib/python3.12/site-packages/pony_control-1.0.0-py3.12.egg-info' (and everything under it)
+[8.456s] Copying ../../build/pony_control/pony_control.egg-info to /home/sivax/pony_quadruped/install/pony_control/lib/python3.12/site-packages/pony_control-1.0.0-py3.12.egg-info
+[8.465s] running install_scripts
+[9.387s] Installing quadruped_control script to /home/sivax/pony_quadruped/install/pony_control/bin
+[9.391s] Installing test_single_leg script to /home/sivax/pony_quadruped/install/pony_control/bin
+[9.394s] Installing test_single_motor script to /home/sivax/pony_quadruped/install/pony_control/bin
+[9.396s] writing list of installed files to '/home/sivax/pony_quadruped/build/pony_control/install.log'
+[9.613s] Invoked command in '/home/sivax/pony_quadruped/src/pony_control' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PS1=(py) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ PYTHONPATH=/home/sivax/pony_quadruped/build/pony_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/sivax/pony_quadruped/install/pony_control/lib/python3.12/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(py) /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/pony_control build --build-base /home/sivax/pony_quadruped/build/pony_control/build install --record /home/sivax/pony_quadruped/build/pony_control/install.log --single-version-externally-managed install_data

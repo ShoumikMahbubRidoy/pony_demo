@@ -1,0 +1,67 @@
+running egg_info
+creating ../../build/pony_control/pony_control.egg-info
+writing ../../build/pony_control/pony_control.egg-info/PKG-INFO
+writing dependency_links to ../../build/pony_control/pony_control.egg-info/dependency_links.txt
+writing entry points to ../../build/pony_control/pony_control.egg-info/entry_points.txt
+writing requirements to ../../build/pony_control/pony_control.egg-info/requires.txt
+writing top-level names to ../../build/pony_control/pony_control.egg-info/top_level.txt
+writing manifest file '../../build/pony_control/pony_control.egg-info/SOURCES.txt'
+reading manifest file '../../build/pony_control/pony_control.egg-info/SOURCES.txt'
+writing manifest file '../../build/pony_control/pony_control.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/sivax/pony_quadruped/build/pony_control/build
+creating /home/sivax/pony_quadruped/build/pony_control/build/lib
+creating /home/sivax/pony_quadruped/build/pony_control/build/lib/pony_control
+copying pony_control/leg_controller.py -> /home/sivax/pony_quadruped/build/pony_control/build/lib/pony_control
+copying pony_control/motor_controller.py -> /home/sivax/pony_quadruped/build/pony_control/build/lib/pony_control
+copying pony_control/__init__.py -> /home/sivax/pony_quadruped/build/pony_control/build/lib/pony_control
+copying pony_control/keyboard_teleop.py -> /home/sivax/pony_quadruped/build/pony_control/build/lib/pony_control
+copying pony_control/quadruped_controller.py -> /home/sivax/pony_quadruped/build/pony_control/build/lib/pony_control
+creating /home/sivax/pony_quadruped/build/pony_control/build/lib/pony_control/utils
+copying pony_control/utils/math_utils.py -> /home/sivax/pony_quadruped/build/pony_control/build/lib/pony_control/utils
+copying pony_control/utils/can_utils.py -> /home/sivax/pony_quadruped/build/pony_control/build/lib/pony_control/utils
+copying pony_control/utils/constants.py -> /home/sivax/pony_quadruped/build/pony_control/build/lib/pony_control/utils
+copying pony_control/utils/__init__.py -> /home/sivax/pony_quadruped/build/pony_control/build/lib/pony_control/utils
+running install
+running install_lib
+creating /home/sivax/pony_quadruped/install/pony_control/lib/python3.12/site-packages/pony_control
+copying /home/sivax/pony_quadruped/build/pony_control/build/lib/pony_control/leg_controller.py -> /home/sivax/pony_quadruped/install/pony_control/lib/python3.12/site-packages/pony_control
+copying /home/sivax/pony_quadruped/build/pony_control/build/lib/pony_control/motor_controller.py -> /home/sivax/pony_quadruped/install/pony_control/lib/python3.12/site-packages/pony_control
+creating /home/sivax/pony_quadruped/install/pony_control/lib/python3.12/site-packages/pony_control/utils
+copying /home/sivax/pony_quadruped/build/pony_control/build/lib/pony_control/utils/math_utils.py -> /home/sivax/pony_quadruped/install/pony_control/lib/python3.12/site-packages/pony_control/utils
+copying /home/sivax/pony_quadruped/build/pony_control/build/lib/pony_control/utils/can_utils.py -> /home/sivax/pony_quadruped/install/pony_control/lib/python3.12/site-packages/pony_control/utils
+copying /home/sivax/pony_quadruped/build/pony_control/build/lib/pony_control/utils/constants.py -> /home/sivax/pony_quadruped/install/pony_control/lib/python3.12/site-packages/pony_control/utils
+copying /home/sivax/pony_quadruped/build/pony_control/build/lib/pony_control/utils/__init__.py -> /home/sivax/pony_quadruped/install/pony_control/lib/python3.12/site-packages/pony_control/utils
+copying /home/sivax/pony_quadruped/build/pony_control/build/lib/pony_control/__init__.py -> /home/sivax/pony_quadruped/install/pony_control/lib/python3.12/site-packages/pony_control
+copying /home/sivax/pony_quadruped/build/pony_control/build/lib/pony_control/keyboard_teleop.py -> /home/sivax/pony_quadruped/install/pony_control/lib/python3.12/site-packages/pony_control
+copying /home/sivax/pony_quadruped/build/pony_control/build/lib/pony_control/quadruped_controller.py -> /home/sivax/pony_quadruped/install/pony_control/lib/python3.12/site-packages/pony_control
+byte-compiling /home/sivax/pony_quadruped/install/pony_control/lib/python3.12/site-packages/pony_control/leg_controller.py to leg_controller.cpython-312.pyc
+byte-compiling /home/sivax/pony_quadruped/install/pony_control/lib/python3.12/site-packages/pony_control/motor_controller.py to motor_controller.cpython-312.pyc
+byte-compiling /home/sivax/pony_quadruped/install/pony_control/lib/python3.12/site-packages/pony_control/utils/math_utils.py to math_utils.cpython-312.pyc
+byte-compiling /home/sivax/pony_quadruped/install/pony_control/lib/python3.12/site-packages/pony_control/utils/can_utils.py to can_utils.cpython-312.pyc
+byte-compiling /home/sivax/pony_quadruped/install/pony_control/lib/python3.12/site-packages/pony_control/utils/constants.py to constants.cpython-312.pyc
+byte-compiling /home/sivax/pony_quadruped/install/pony_control/lib/python3.12/site-packages/pony_control/utils/__init__.py to __init__.cpython-312.pyc
+byte-compiling /home/sivax/pony_quadruped/install/pony_control/lib/python3.12/site-packages/pony_control/__init__.py to __init__.cpython-312.pyc
+byte-compiling /home/sivax/pony_quadruped/install/pony_control/lib/python3.12/site-packages/pony_control/keyboard_teleop.py to keyboard_teleop.cpython-312.pyc
+byte-compiling /home/sivax/pony_quadruped/install/pony_control/lib/python3.12/site-packages/pony_control/quadruped_controller.py to quadruped_controller.cpython-312.pyc
+running install_data
+creating /home/sivax/pony_quadruped/install/pony_control/share/ament_index
+creating /home/sivax/pony_quadruped/install/pony_control/share/ament_index/resource_index
+creating /home/sivax/pony_quadruped/install/pony_control/share/ament_index/resource_index/packages
+copying resource/pony_control -> /home/sivax/pony_quadruped/install/pony_control/share/ament_index/resource_index/packages
+copying package.xml -> /home/sivax/pony_quadruped/install/pony_control/share/pony_control
+creating /home/sivax/pony_quadruped/install/pony_control/share/pony_control/launch
+copying launch/quadruped_control.launch.py -> /home/sivax/pony_quadruped/install/pony_control/share/pony_control/launch
+copying launch/single_leg_test.launch.py -> /home/sivax/pony_quadruped/install/pony_control/share/pony_control/launch
+copying launch/single_motor_test.launch.py -> /home/sivax/pony_quadruped/install/pony_control/share/pony_control/launch
+creating /home/sivax/pony_quadruped/install/pony_control/share/pony_control/config
+copying config/motor_params.yaml -> /home/sivax/pony_quadruped/install/pony_control/share/pony_control/config
+copying config/robot_config.yaml -> /home/sivax/pony_quadruped/install/pony_control/share/pony_control/config
+running install_egg_info
+Copying ../../build/pony_control/pony_control.egg-info to /home/sivax/pony_quadruped/install/pony_control/lib/python3.12/site-packages/pony_control-1.0.0-py3.12.egg-info
+running install_scripts
+Installing quadruped_control script to /home/sivax/pony_quadruped/install/pony_control/bin
+Installing test_single_leg script to /home/sivax/pony_quadruped/install/pony_control/bin
+Installing test_single_motor script to /home/sivax/pony_quadruped/install/pony_control/bin
+writing list of installed files to '/home/sivax/pony_quadruped/build/pony_control/install.log'
